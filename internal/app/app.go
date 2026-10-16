@@ -42,7 +42,6 @@ func Run() {
 		utils.WriteErr(w, http.StatusBadRequest, "bad_request_example")
 	})
 
-
 	handler := withRequestID(mux)
 
 	utils.LogInfo("Server is starting on :8080")
